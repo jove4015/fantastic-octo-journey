@@ -1,0 +1,47 @@
+{
+  "name": "@kiefa/kiefa-cultivator",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "prod": "next build && next start",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^4.26.1",
+    "@sentry/integrations": "^7.74.1",
+    "@sentry/nextjs": "^7.74.1",
+    "@sentry/profiling-node": "^1.2.1",
+    "@trpc/client": "^10.40.0",
+    "@trpc/next": "^10.40.0",
+    "@trpc/react-query": "^10.40.0",
+    "@trpc/server": "^10.40.0",
+    "next": "^13.5.6",
+    "next-logger": "^3.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-query": "^3.39.3",
+    "superjson": "^1.13.3",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-react": "^7.22.15",
+    "@babel/preset-typescript": "^7.23.0",
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.8.3",
+    "@types/react": "^18.2.25",
+    "dpdm": "^3.14.0",
+    "eslint": "^8.51.0",
+    "eslint-config-next": "^13.5.4",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.3",
+    "node-mocks-http": "^1.13.0",
+    "prettier": "^3.0.3",
+    "sass": "^1.69.0"
+  }
+}

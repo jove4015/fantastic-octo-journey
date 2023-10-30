@@ -1,0 +1,37 @@
+{
+  "name": "kiefa",
+  "private": true,
+  "scripts": {
+    "compile": "tsc -b -w -i",
+    "eslint": "eslint src/**/**.{ts,tsx}",
+    "eslint:fix": "eslint src/**/**.{ts,tsx} --fix",
+    "ui": "npm -w @kiefa/kiefa-cultivator run build-ci",
+    "rm": "npm -w @kiefa/room-mapper run build-ci",
+    "lint": "npm -w @kiefa/kiefa-cultivator run lint",
+    "dpdm": "npm -w @kiefa/kiefa-cultivator run dpdm",
+    "build": "npm -w @kiefa/kiefa-cultivator run build",
+    "dev-ui": "npm -w @kiefa/kiefa-cultivator run dev",
+    "prod-ui": "npm -w @kiefa/kiefa-cultivator run prod",
+    "reset-grow-fields": "npm -w @kiefa/kiefa-cultivator run reset-grow-fields",
+    "reset-db": "npm -w @kiefa/kiefa-cultivator run reset-db",
+    "reset-clerk": "npm -w @kiefa/kiefa-cultivator run reset-clerk",
+    "reset-casbin": "npm -w @kiefa/kiefa-cultivator run reset-casbin",
+    "format": "prettier --write 'packages/**/*.{ts,tsx,js,jsx}'",
+    "seed": "npm -w @kiefa/kiefa-cultivator run seed",
+    "e2e": "npm -w @kiefa/kiefa-cultivator run e2e",
+    "generate": "npm -w @kiefa/kiefa-cultivator run generate",
+    "prepare": "test -d node_modules/husky && cd .. && husky install app/.husky || echo \"husky is not installed\""
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "patch-package": "^6.5.1",
+    "prettier": "^2.7.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "npx prettier --write"
+  }
+}

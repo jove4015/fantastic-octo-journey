@@ -1,0 +1,7 @@
+.vscode
+node_modules
+# Sentry
+.sentryclirc
+cypress/screenshots
+cypress/videos
+build

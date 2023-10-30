@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "noUncheckedIndexedAccess": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"],
+      "public/*": ["public/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.json",
+    "*.ts",
+    "*.tsx",
+    "*.json",
+    "*.js",
+    "./src/**/*.js",
+    "./test/**/*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "cypress",
+    "cypress.config.ts",
+    "jest.config.ts",
+    "src/jest-setup.ts",
+    "src/components/testUtils/**",
+    "src/Pheno/testUtils/**",
+    "src/**/*.spec.tsx",
+    "src/**/*.test.tsx"
+  ],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}

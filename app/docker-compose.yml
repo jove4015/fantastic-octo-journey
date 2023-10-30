@@ -1,0 +1,14 @@
+name: kiefa
+
+services:
+  app:
+    image: kiefa-dev
+    build: .
+    ports:
+      - 3000:3000
+      - 9229:9229
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/packages/kiefa-cultivator/build
+    command: npm run dev-ui
